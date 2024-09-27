@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T14:19:23.497869" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt9" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt9\asgmt9.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Calculate Square" line="9">
+<kw name="Calculate Square">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-25T14:19:23.530756" level="INFO">${result} = 16</msg>
+<var>${result}</var>
+<arg>${${number} * ${number}}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-25T14:19:23.530756" elapsed="0.000000"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-25T14:19:23.531749" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${result}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-25T14:19:23.531749" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-25T14:19:23.531749" level="INFO">${square} = 16</msg>
+<var>${square}</var>
+<arg>${4}</arg>
+<status status="PASS" start="2024-09-25T14:19:23.529763" elapsed="0.001986"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${square}</arg>
+<arg>${16}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-09-25T14:19:23.531749" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T14:19:23.528763" elapsed="0.002986"/>
+</test>
+<status status="PASS" start="2024-09-25T14:19:23.499860" elapsed="0.032886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt9">Asgmt9</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

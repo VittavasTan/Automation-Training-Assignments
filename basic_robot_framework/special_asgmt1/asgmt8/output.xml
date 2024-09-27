@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T15:23:48.548858" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt8" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt8\asgmt8.robot">
+<test id="s1-t1" name="TC-001 Test Preload Variables from YAML file" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:23:49.069120" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2024-09-25T15:23:49.706039" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>${app_url}</arg>
+<arg>browser=gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-25T15:23:49.068123" elapsed="3.642907"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:23:52.713027" level="INFO">Typing text 'student' into text field 'id=username'.</msg>
+<arg>id=username</arg>
+<arg>${credentials.username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-25T15:23:52.712027" elapsed="0.067772"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:23:52.780796" level="INFO">Typing text 'Password123' into text field 'id=password'.</msg>
+<arg>id=password</arg>
+<arg>${credentials.password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-25T15:23:52.780796" elapsed="0.060795"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:23:52.842591" level="INFO">Clicking element 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-25T15:23:52.842591" elapsed="0.855667"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-25T15:23:55.699594" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-25T15:23:53.699253" elapsed="2.000341"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-25T15:23:55.699594" elapsed="2.203800"/>
+</kw>
+<status status="PASS" start="2024-09-25T15:23:49.067126" elapsed="8.836268"/>
+</test>
+<status status="PASS" start="2024-09-25T15:23:48.553842" elapsed="9.350549"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt8">Asgmt8</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-25T15:23:49.706039" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

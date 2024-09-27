@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T15:27:27.219575" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt15" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt15\asgmt15.robot">
+<test id="s1-t1" name="TC-001 Error Handling Example" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:27:27.737844" level="INFO">Opening browser 'gc' to base url 'https://practicetestautomation.com/practice-test-login/'.</msg>
+<msg time="2024-09-25T15:27:28.276552" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://practicetestautomation.com/practice-test-login/</arg>
+<arg>browser=gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-25T15:27:27.737844" elapsed="3.625317"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:27:31.365155" level="INFO">Clicking element 'id=submit'.</msg>
+<arg>id=submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-25T15:27:31.364159" elapsed="0.036876"/>
+</kw>
+<msg time="2024-09-25T15:27:31.401035" level="INFO">${status} = True</msg>
+<var>${status}</var>
+<arg>Click Element</arg>
+<arg>id=submit</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-09-25T15:27:31.364159" elapsed="0.036876"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T15:27:31.402032" level="INFO">Status: True</msg>
+<arg>Status: ${status}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T15:27:31.402032" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-25T15:27:31.403029" level="INFO">Typing text 'value' into text field 'id=invalid_test'.</msg>
+<msg time="2024-09-25T15:27:31.476781" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-25T15:27:31.476781" level="FAIL">Element with locator 'id=invalid_test' not found.</msg>
+<arg>id=invalid_test</arg>
+<arg>value</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-25T15:27:31.403029" elapsed="0.076827">Element with locator 'id=invalid_test' not found.</status>
+</kw>
+<arg>Input Text</arg>
+<arg>id=invalid_test</arg>
+<arg>value</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-09-25T15:27:31.403029" elapsed="0.076827"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T15:27:31.480838" level="INFO">Ignored the error and continued</msg>
+<arg>Ignored the error and continued</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T15:27:31.480838" elapsed="0.000926"/>
+</kw>
+<status status="PASS" start="2024-09-25T15:27:27.736845" elapsed="3.744919"/>
+</test>
+<status status="PASS" start="2024-09-25T15:27:27.222563" elapsed="4.260199"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt15">Asgmt15</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-25T15:27:28.276552" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.70 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

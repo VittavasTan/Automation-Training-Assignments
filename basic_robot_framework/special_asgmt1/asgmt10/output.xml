@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:10:26.577205" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt10" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt10\asgmt10.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Create Fruit List" line="7">
+<kw name="Create Fruit List">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-09-25T00:10:26.613488" level="INFO">@{fruits} = [ apple | banana | cherry ]</msg>
+<var>@{fruits}</var>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-09-25T00:10:26.613488" elapsed="0.000000"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-25T00:10:26.613488" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>@{fruits}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-25T00:10:26.613488" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-25T00:10:26.613488" level="INFO">@{my_fruits} = [ apple | banana | cherry ]</msg>
+<var>@{my_fruits}</var>
+<status status="PASS" start="2024-09-25T00:10:26.612493" elapsed="0.000995"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:10:26.614481" level="INFO">apple</msg>
+<arg>${my_fruits[0]}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:10:26.614481" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:10:26.605511" elapsed="0.008970"/>
+</test>
+<status status="PASS" start="2024-09-25T00:10:26.579199" elapsed="0.036279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt10">Asgmt10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

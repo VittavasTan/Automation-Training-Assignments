@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:19:55.635703" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt19" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt19\asgmt19.robot">
+<test id="s1-t1" name="TC-001 With Teardown" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:19:55.672851" level="INFO">Running the test</msg>
+<arg>Running the test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:19:55.671844" elapsed="0.001007"/>
+</kw>
+<kw name="Keyword with Teardown">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:19:55.673847" level="INFO">Running the test</msg>
+<arg>Running the test</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:19:55.673847" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-25T00:19:55.673847" level="INFO">Keyword Teardown is running</msg>
+<arg>Keyword Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:19:55.673847" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:19:55.672851" elapsed="0.000996"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-25T00:19:55.674839" level="INFO">Test Case Teardown is running</msg>
+<arg>Test Case Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:19:55.673847" elapsed="0.000992"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:19:55.671844" elapsed="0.003286"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-25T00:19:55.675130" level="INFO">Suite Teardown is running</msg>
+<arg>Suite Teardown is running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:19:55.675130" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:19:55.636695" elapsed="0.038435"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt19">Asgmt19</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

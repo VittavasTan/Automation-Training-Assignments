@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:02:25.136771" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt5" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt5\asgmt5.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Print All Items with 3 elements" line="9">
+<kw name="Print All Items">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.166701" level="INFO">apple</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.165700" elapsed="0.001001"/>
+</kw>
+<var name="${item}">apple</var>
+<status status="PASS" start="2024-09-25T00:02:25.165700" elapsed="0.001001"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.166701" level="INFO">banana</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.166701" elapsed="0.000000"/>
+</kw>
+<var name="${item}">banana</var>
+<status status="PASS" start="2024-09-25T00:02:25.166701" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.167697" level="INFO">cherry</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.166701" elapsed="0.000996"/>
+</kw>
+<var name="${item}">cherry</var>
+<status status="PASS" start="2024-09-25T00:02:25.166701" elapsed="0.000996"/>
+</iter>
+<var>${item}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-09-25T00:02:25.165700" elapsed="0.001997"/>
+</for>
+<arg>apple</arg>
+<arg>banana</arg>
+<arg>cherry</arg>
+<status status="PASS" start="2024-09-25T00:02:25.165700" elapsed="0.001997"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:02:25.164703" elapsed="0.002994"/>
+</test>
+<test id="s1-t2" name="TC-002 Test Keyword Print All Items with 5 elements" line="12">
+<kw name="Print All Items">
+<for flavor="IN">
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.168693" level="INFO">cat</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.168693" elapsed="0.000997"/>
+</kw>
+<var name="${item}">cat</var>
+<status status="PASS" start="2024-09-25T00:02:25.168693" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.169690" level="INFO">dog</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000000"/>
+</kw>
+<var name="${item}">dog</var>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.169690" level="INFO">bird</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000000"/>
+</kw>
+<var name="${item}">bird</var>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.170687" level="INFO">fish</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000997"/>
+</kw>
+<var name="${item}">fish</var>
+<status status="PASS" start="2024-09-25T00:02:25.169690" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:02:25.170687" level="INFO">Moodeng</msg>
+<arg>${item}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:02:25.170687" elapsed="0.000000"/>
+</kw>
+<var name="${item}">Moodeng</var>
+<status status="PASS" start="2024-09-25T00:02:25.170687" elapsed="0.000000"/>
+</iter>
+<var>${item}</var>
+<value>@{items}</value>
+<status status="PASS" start="2024-09-25T00:02:25.168693" elapsed="0.001994"/>
+</for>
+<arg>cat</arg>
+<arg>dog</arg>
+<arg>bird</arg>
+<arg>fish</arg>
+<arg>Moodeng</arg>
+<status status="PASS" start="2024-09-25T00:02:25.168693" elapsed="0.001994"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:02:25.168693" elapsed="0.003042"/>
+</test>
+<status status="PASS" start="2024-09-25T00:02:25.137780" elapsed="0.033955"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Asgmt5">Asgmt5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

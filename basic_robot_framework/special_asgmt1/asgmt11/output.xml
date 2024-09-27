@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:11:07.362935" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt11" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt11\asgmt11.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Create User Info" line="7">
+<kw name="Create User Info">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-25T00:11:07.393792" level="INFO">${user_info} = {'name': 'John', 'age': '30', 'city': 'Bangkok'}</msg>
+<var>${user_info}</var>
+<arg>name=John</arg>
+<arg>age=30</arg>
+<arg>city=Bangkok</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-25T00:11:07.392791" elapsed="0.001001"/>
+</kw>
+<kw name="Return From Keyword" owner="BuiltIn">
+<msg time="2024-09-25T00:11:07.393792" level="INFO">Returning from the enclosing user keyword.</msg>
+<arg>${user_info}</arg>
+<doc>Returns from the enclosing user keyword.</doc>
+<status status="PASS" start="2024-09-25T00:11:07.393792" elapsed="0.000000"/>
+</kw>
+<msg time="2024-09-25T00:11:07.393792" level="INFO">${user} = {'name': 'John', 'age': '30', 'city': 'Bangkok'}</msg>
+<var>${user}</var>
+<status status="PASS" start="2024-09-25T00:11:07.392791" elapsed="0.001001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:11:07.394788" level="INFO">Name: John</msg>
+<arg>Name: ${user.name}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:11:07.393792" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:11:07.392791" elapsed="0.007118"/>
+</test>
+<status status="PASS" start="2024-09-25T00:11:07.364945" elapsed="0.036015"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt11">Asgmt11</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

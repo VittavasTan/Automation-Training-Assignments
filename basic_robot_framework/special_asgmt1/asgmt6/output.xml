@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:06:19.517328" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt6" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt6\asgmt6.robot">
+<test id="s1-t1" name="TC-001 Test Set Global and Local Variable" line="8">
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-09-25T00:06:19.553374" level="INFO">${name} = Jack</msg>
+<arg>${name}</arg>
+<arg>Jack</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-09-25T00:06:19.553374" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:06:19.554370" level="INFO">Global Name is set as Jack</msg>
+<arg>Global Name is set as ${name}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:06:19.554370" elapsed="0.000274"/>
+</kw>
+<kw name="Set Local Name">
+<kw name="Set Local Variable" owner="BuiltIn">
+<msg time="2024-09-25T00:06:19.554644" level="INFO">${name} = John</msg>
+<arg>${name}</arg>
+<arg>${local_name}</arg>
+<doc>Makes a variable available everywhere within the local scope.</doc>
+<status status="PASS" start="2024-09-25T00:06:19.554644" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:06:19.555653" level="INFO">Local Name is set as John</msg>
+<arg>Local Name is set as ${name}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:06:19.555653" elapsed="0.000000"/>
+</kw>
+<arg>John</arg>
+<status status="PASS" start="2024-09-25T00:06:19.554644" elapsed="0.001009"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:06:19.552375" elapsed="0.003278"/>
+</test>
+<status status="PASS" start="2024-09-25T00:06:19.518329" elapsed="0.038315"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt6">Asgmt6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

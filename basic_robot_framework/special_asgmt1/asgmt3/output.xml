@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:00:12.813683" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt3" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt3\asgmt3.robot">
+<test id="s1-t1" name="TC-001 Test Print User Info" line="9">
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2024-09-25T00:00:12.852180" level="INFO">&amp;{user_info} = { name=Vittavas | age=22 | city=Tak }</msg>
+<var>&amp;{user_info}</var>
+<arg>name=Vittavas</arg>
+<arg>age=22</arg>
+<arg>city=Tak</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2024-09-25T00:00:12.852180" elapsed="0.000000"/>
+</kw>
+<kw name="Print User Info">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:00:12.853122" level="INFO">Name: Vittavas</msg>
+<arg>Name: ${user_info["name"]}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:00:12.853122" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:00:12.854120" level="INFO">Age: 22</msg>
+<arg>Age: ${user_info["age"]}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:00:12.853122" elapsed="0.000998"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:00:12.855116" level="INFO">City: Tak</msg>
+<arg>City: ${user_info["city"]}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:00:12.854120" elapsed="0.000996"/>
+</kw>
+<arg>&amp;{user_info}</arg>
+<status status="PASS" start="2024-09-25T00:00:12.852180" elapsed="0.002936"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:00:12.843699" elapsed="0.011417"/>
+</test>
+<status status="PASS" start="2024-09-25T00:00:12.814679" elapsed="0.041432"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt3">Asgmt3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

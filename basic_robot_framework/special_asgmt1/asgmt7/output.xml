@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:08:29.163561" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt7" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt7\asgmt7.robot">
+<test id="s1-t1" name="TC-001 Test Load Variables 'name' from YAML" line="5">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:08:29.192469" level="INFO">John</msg>
+<arg>${user.name}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:08:29.191469" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:08:29.191469" elapsed="0.001993"/>
+</test>
+<test id="s1-t2" name="TC-002 Test Load Variables 'age' from YAML" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:08:29.194462" level="INFO">30</msg>
+<arg>${user.age}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:08:29.193462" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:08:29.193462" elapsed="0.001000"/>
+</test>
+<test id="s1-t3" name="TC-003 Test Load Variables 'city' from YAML" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:08:29.195459" level="INFO">Bangkok</msg>
+<arg>${user.city}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:08:29.194462" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:08:29.194462" elapsed="0.000997"/>
+</test>
+<status status="PASS" start="2024-09-25T00:08:29.165559" elapsed="0.029900"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Asgmt7">Asgmt7</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:18:01.899128" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt17" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt17\asgmt17.robot">
+<test id="s1-t1" name="TC-001 Example Test with Setup and Teardown" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2024-09-25T00:18:02.101581" level="INFO">Opening browser 'chrome' to base url 'http://google.com'.</msg>
+<msg time="2024-09-25T00:18:02.366827" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.58 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>http://google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-25T00:18:02.101581" elapsed="2.304080"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:18:04.406658" level="INFO">Test is Running</msg>
+<arg>Test is Running</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:18:04.406658" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-25T00:18:04.407655" elapsed="2.121127"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:18:02.100586" elapsed="4.428196"/>
+</test>
+<status status="PASS" start="2024-09-25T00:18:01.901122" elapsed="4.628652"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt17">Asgmt17</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-09-25T00:18:02.366827" level="WARN">The chromedriver version (128.0.6613.137) detected in PATH at D:\chromedriver\chromedriver.exe might not be compatible with the detected chrome version (129.0.6668.59); currently, chromedriver 129.0.6668.58 is recommended for chrome 129.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

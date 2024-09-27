@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-24T23:57:08.744360" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt1" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt1\asgmt1.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Validate Age when Age is 16" line="14">
+<kw name="Validate Age">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log if not Eligible">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-24T23:57:08.775261" level="INFO">Not eligible for voting</msg>
+<arg>Not eligible for voting</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-24T23:57:08.775261" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2024-09-24T23:57:08.775261" elapsed="0.000998"/>
+</kw>
+<arg>${age} &gt; 18</arg>
+<arg>Log if Eligible</arg>
+<arg>ELSE</arg>
+<arg>Log if not Eligible</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-24T23:57:08.775261" elapsed="0.000998"/>
+</kw>
+<arg>16</arg>
+<status status="PASS" start="2024-09-24T23:57:08.774260" elapsed="0.001999"/>
+</kw>
+<status status="PASS" start="2024-09-24T23:57:08.774260" elapsed="0.005985"/>
+</test>
+<test id="s1-t2" name="TC-002 Test Keyword Validate Age when Age is 20" line="17">
+<kw name="Validate Age">
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log if Eligible">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-24T23:57:08.782238" level="INFO">Eligible for voting</msg>
+<arg>Eligible for voting</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-24T23:57:08.782238" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-24T23:57:08.781237" elapsed="0.001001"/>
+</kw>
+<arg>${age} &gt; 18</arg>
+<arg>Log if Eligible</arg>
+<arg>ELSE</arg>
+<arg>Log if not Eligible</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-24T23:57:08.781237" elapsed="0.001001"/>
+</kw>
+<arg>20</arg>
+<status status="PASS" start="2024-09-24T23:57:08.781237" elapsed="0.001001"/>
+</kw>
+<status status="PASS" start="2024-09-24T23:57:08.780245" elapsed="0.001993"/>
+</test>
+<status status="PASS" start="2024-09-24T23:57:08.746353" elapsed="0.036880"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Asgmt1">Asgmt1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

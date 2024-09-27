@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T23:05:52.194267" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt23 25" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt23_25">
+<suite id="s1-s1" name="Asgmt23" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt23_25\asgmt23.robot">
+<test id="s1-s1-t1" name="TC-003 Parallel Test 3" line="8">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T23:05:52.231142" level="INFO">Running Test 3</msg>
+<arg>Running Test 3</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T23:05:52.231142" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T23:05:52.230145" elapsed="0.001993"/>
+</test>
+<status status="PASS" start="2024-09-25T23:05:52.228166" elapsed="0.003972"/>
+</suite>
+<status status="PASS" start="2024-09-25T23:05:52.212203" elapsed="0.020932"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt23 25">Asgmt23 25</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Asgmt23">Asgmt23 25.Asgmt23</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

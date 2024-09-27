@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:01:27.091784" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt4" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt4\asgmt4.robot">
+<test id="s1-t1" name="TC-001 Test Keyword Greet User using Default" line="7">
+<kw name="Greet User">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:01:27.121684" level="INFO">"Hello, Guest"</msg>
+<arg>"Hello, ${name}"</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:01:27.121684" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:01:27.121684" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:01:27.120689" elapsed="0.006979"/>
+</test>
+<test id="s1-t2" name="TC-002 Test Keyword Greet User using Argument 'John' as Name" line="10">
+<kw name="Greet User">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:01:27.128661" level="INFO">"Hello, John"</msg>
+<arg>"Hello, ${name}"</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:01:27.128661" elapsed="0.000000"/>
+</kw>
+<arg>John</arg>
+<status status="PASS" start="2024-09-25T00:01:27.128661" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:01:27.128661" elapsed="0.000996"/>
+</test>
+<status status="PASS" start="2024-09-25T00:01:27.092781" elapsed="0.037873"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Asgmt4">Asgmt4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-25T00:12:56.563144" rpa="false" schemaversion="5">
+<suite id="s1" name="Asgmt12" source="C:\Users\ASUS\Desktop\doppio_assignments\special_asgmt\asgmt12\asgmt12.robot">
+<test id="s1-t1" name="TC-001 Age Verification" line="2">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-25T00:12:56.597027" level="INFO">${age} = 20</msg>
+<var>${age}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-25T00:12:56.597027" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-25T00:12:56.598023" level="INFO">You are an adult</msg>
+<arg>You are an adult</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-25T00:12:56.598023" elapsed="0.000000"/>
+</kw>
+<arg>${age} &gt; 18</arg>
+<arg>Log</arg>
+<arg>You are an adult</arg>
+<arg>console=True</arg>
+<arg>ELSE IF</arg>
+<arg>${age} == 18</arg>
+<arg>Log</arg>
+<arg>You just became an adult</arg>
+<arg>console=True</arg>
+<arg>ELSE</arg>
+<arg>Log</arg>
+<arg>You are underage</arg>
+<arg>console=True</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-25T00:12:56.597027" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-25T00:12:56.591047" elapsed="0.006976"/>
+</test>
+<status status="PASS" start="2024-09-25T00:12:56.564136" elapsed="0.034884"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Asgmt12">Asgmt12</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
