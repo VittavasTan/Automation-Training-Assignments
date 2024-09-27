@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-27T11:05:09.511784" rpa="false" schemaversion="5">
+<suite id="s1" name="For Loop Asgmt" source="C:\Users\ASUS\Desktop\doppio_assignments\basic_robot_framework\for_loop_asgmt\for_loop_asgmt.robot">
+<test id="s1-t1" name="TC-001 Print Even Heroes" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.543009" level="INFO">${i} = 0</msg>
+<var>${i}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.543009" elapsed="0.000000"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.544006" level="INFO">${mod_remainder} = 0</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.544006" level="INFO">ironman</msg>
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.545002" level="INFO">${i} = 1</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000996"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.545002" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">ironman</var>
+<status status="PASS" start="2024-09-27T11:05:09.544006" elapsed="0.000996"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.545999" level="INFO">${mod_remainder} = 1</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.545002" elapsed="0.000997"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T11:05:09.545999" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T11:05:09.545999" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.545999" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.545999" level="INFO">${i} = 2</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.545999" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.545999" elapsed="0.000996"/>
+</kw>
+<var name="${hero}">batman</var>
+<status status="PASS" start="2024-09-27T11:05:09.545002" elapsed="0.001993"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.546995" level="INFO">${mod_remainder} = 0</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.546995" level="INFO">captain</msg>
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.547992" level="INFO">${i} = 3</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000997"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.547992" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">captain</var>
+<status status="PASS" start="2024-09-27T11:05:09.546995" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.547992" level="INFO">${mod_remainder} = 1</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.547992" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T11:05:09.547992" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T11:05:09.547992" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.547992" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.548989" level="INFO">${i} = 4</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.547992" elapsed="0.000997"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">superman</var>
+<status status="PASS" start="2024-09-27T11:05:09.547992" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.548989" level="INFO">${mod_remainder} = 0</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.549985" level="INFO">hulk</msg>
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000996"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000996"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.549985" level="INFO">${i} = 5</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.549985" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.549985" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">hulk</var>
+<status status="PASS" start="2024-09-27T11:05:09.548989" elapsed="0.000996"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.550982" level="INFO">${mod_remainder} = 1</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.550982" level="INFO">${i} = 6</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.550982" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">shazam</var>
+<status status="PASS" start="2024-09-27T11:05:09.550982" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.551979" level="INFO">${mod_remainder} = 0</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.551979" level="INFO">thor</msg>
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.552975" level="INFO">${i} = 7</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000996"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.552975" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">thor</var>
+<status status="PASS" start="2024-09-27T11:05:09.551979" elapsed="0.000996"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.552975" level="INFO">${mod_remainder} = 1</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.552975" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-09-27T11:05:09.552975" elapsed="0.000000"/>
+</kw>
+<status status="NOT RUN" start="2024-09-27T11:05:09.552975" elapsed="0.000000"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.552975" elapsed="0.000000"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.553972" level="INFO">${i} = 8</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.552975" elapsed="0.000997"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">flash</var>
+<status status="PASS" start="2024-09-27T11:05:09.552975" elapsed="0.000997"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.553972" level="INFO">${mod_remainder} = 0</msg>
+<var>${mod_remainder}</var>
+<arg>${i} % 2</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000000"/>
+</kw>
+<if>
+<branch type="IF" condition="${mod_remainder} == 0">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.553972" level="INFO">black widow</msg>
+<arg>${hero}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000997"/>
+</kw>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000997"/>
+</branch>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000997"/>
+</if>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.554969" level="INFO">${i} = 9</msg>
+<var>${i}</var>
+<arg>${${i} + 1}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.554969" elapsed="0.000000"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-09-27T11:05:09.554969" level="INFO">Exiting for loop altogether.</msg>
+<arg>"${hero}" == "black widow"</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-09-27T11:05:09.554969" elapsed="0.000000"/>
+</kw>
+<var name="${hero}">black widow</var>
+<status status="PASS" start="2024-09-27T11:05:09.553972" elapsed="0.000997"/>
+</iter>
+<var>${hero}</var>
+<value>@{heroes}</value>
+<status status="PASS" start="2024-09-27T11:05:09.543009" elapsed="0.011960"/>
+</for>
+<status status="PASS" start="2024-09-27T11:05:09.542012" elapsed="0.013950"/>
+</test>
+<status status="PASS" start="2024-09-27T11:05:09.513778" elapsed="0.042366"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="For Loop Asgmt">For Loop Asgmt</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
