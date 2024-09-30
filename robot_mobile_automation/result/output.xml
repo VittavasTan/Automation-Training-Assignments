@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-30T02:29:22.505479" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-09-30T17:47:22.292820" rpa="false" schemaversion="5">
 <suite id="s1" name="Appium Asgmt" source="C:\Users\ASUS\Desktop\doppio_assignments\robot_mobile_automation\testcases\appium_asgmt.robot">
 <kw name="Open Demo Application" owner="common" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -17,134 +17,134 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-09-30T02:29:22.698900" elapsed="5.466138"/>
+<status status="PASS" start="2024-09-30T17:47:22.492580" elapsed="5.476256"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:22.698900" elapsed="5.466138"/>
+<status status="PASS" start="2024-09-30T17:47:22.492580" elapsed="5.477253"/>
 </kw>
 <test id="s1-t1" name="TC001 Verify Cart Contain Correct Order Name And Amount" line="8">
 <kw name="Click Product Image" owner="catalog_page">
 <kw name="Replace String" owner="String">
-<msg time="2024-09-30T02:29:28.167030" level="INFO">${catalog_locator.image_product} = xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-09-30T17:47:27.971826" level="INFO">${catalog_locator.image_product} = xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
 <var>${catalog_locator.image_product}</var>
 <arg>${catalog_locator.image_product}</arg>
 <arg>{{product_name}}</arg>
 <arg>${product_name}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2024-09-30T02:29:28.166035" elapsed="0.000995"/>
+<status status="PASS" start="2024-09-30T17:47:27.970829" elapsed="0.000997"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:30.330641" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-09-30T17:47:30.070962" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
 <arg>${catalog_locator.image_product}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-09-30T02:29:28.167030" elapsed="2.163611"/>
+<status status="PASS" start="2024-09-30T17:47:27.971826" elapsed="2.100133"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:30.331642" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]'.</msg>
-<msg time="2024-09-30T02:29:31.330925" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-09-30T17:47:30.072957" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]'.</msg>
+<msg time="2024-09-30T17:47:31.001793" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
 <arg>${catalog_locator.image_product}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-09-30T02:29:30.330641" elapsed="1.000284"/>
+<status status="PASS" start="2024-09-30T17:47:30.071959" elapsed="0.929834"/>
 </kw>
 <arg>${product_details.product_name}</arg>
-<status status="PASS" start="2024-09-30T02:29:28.166035" elapsed="3.164890"/>
+<status status="PASS" start="2024-09-30T17:47:27.969833" elapsed="3.031960"/>
 </kw>
 <kw name="Click Add To Cart Button" owner="product_details_page">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
 <arg>${product_details_locator.btn_add_cart}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-09-30T02:29:31.331922" elapsed="0.044913"/>
+<status status="PASS" start="2024-09-30T17:47:31.001793" elapsed="0.026977"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:31.378382" level="INFO">Clicking element 'accessibility_id=Tap to add product to cart'.</msg>
+<msg time="2024-09-30T17:47:31.029771" level="INFO">Clicking element 'accessibility_id=Tap to add product to cart'.</msg>
 <arg>${product_details_locator.btn_add_cart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-09-30T02:29:31.376835" elapsed="0.709520"/>
+<status status="PASS" start="2024-09-30T17:47:31.028770" elapsed="0.681548"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:31.331922" elapsed="0.754790"/>
+<status status="PASS" start="2024-09-30T17:47:31.001793" elapsed="0.708525"/>
 </kw>
 <kw name="Click Cart Icon" owner="common">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:32.089345" level="INFO">Clicking element 'accessibility_id=Displays number of items in your cart'.</msg>
+<msg time="2024-09-30T17:47:31.711980" level="INFO">Clicking element 'accessibility_id=Displays number of items in your cart'.</msg>
 <arg>${common_locator.icon_cart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-09-30T02:29:32.087351" elapsed="0.116667"/>
+<status status="PASS" start="2024-09-30T17:47:31.711315" elapsed="0.814515"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:32.086712" elapsed="0.117306"/>
+<status status="PASS" start="2024-09-30T17:47:31.710318" elapsed="0.815512"/>
 </kw>
 <kw name="Compare Cart Details To Ordered Product Details" owner="cart_details_feature">
 <kw name="Get Order Amount Text" owner="cart_details_page">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:32.987408" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/noTV</msg>
+<msg time="2024-09-30T17:47:32.557207" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/noTV</msg>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-09-30T02:29:32.204018" elapsed="0.783390"/>
+<status status="PASS" start="2024-09-30T17:47:32.526826" elapsed="0.030381"/>
 </kw>
 <kw name="Get Text" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:33.031059" level="INFO">Element 'id=com.saucelabs.mydemoapp.android:id/noTV' text is '1' </msg>
-<msg time="2024-09-30T02:29:33.031059" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/noTV</msg>
-<msg time="2024-09-30T02:29:33.031059" level="INFO">${order_amount} = 1</msg>
+<msg time="2024-09-30T17:47:32.591138" level="INFO">Element 'id=com.saucelabs.mydemoapp.android:id/noTV' text is '1' </msg>
+<msg time="2024-09-30T17:47:32.591138" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/noTV</msg>
+<msg time="2024-09-30T17:47:32.591138" level="INFO">${order_amount} = 1</msg>
 <var>${order_amount}</var>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<status status="PASS" start="2024-09-30T02:29:32.988408" elapsed="0.043648"/>
+<status status="PASS" start="2024-09-30T17:47:32.557207" elapsed="0.033931"/>
 </kw>
 <kw name="Return From Keyword" owner="BuiltIn">
-<msg time="2024-09-30T02:29:33.032056" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2024-09-30T17:47:32.591138" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>${order_amount}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.032056" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-30T17:47:32.591138" elapsed="0.000000"/>
 </kw>
-<msg time="2024-09-30T02:29:33.032056" level="INFO">${order_amount} = 1</msg>
+<msg time="2024-09-30T17:47:32.591138" level="INFO">${order_amount} = 1</msg>
 <var>${order_amount}</var>
-<status status="PASS" start="2024-09-30T02:29:32.204018" elapsed="0.828038"/>
+<status status="PASS" start="2024-09-30T17:47:32.526826" elapsed="0.064312"/>
 </kw>
 <kw name="Get Order Name Text" owner="cart_details_page">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:33.057965" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/titleTV</msg>
+<msg time="2024-09-30T17:47:32.615595" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/titleTV</msg>
 <arg>${cart_details_locator.txt_order_name}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.032056" elapsed="0.025909"/>
+<status status="PASS" start="2024-09-30T17:47:32.591138" elapsed="0.024457"/>
 </kw>
 <kw name="Get Text" owner="AppiumLibrary">
-<msg time="2024-09-30T02:29:33.098279" level="INFO">Element 'id=com.saucelabs.mydemoapp.android:id/titleTV' text is 'Sauce Labs Backpack' </msg>
-<msg time="2024-09-30T02:29:33.098279" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/titleTV</msg>
-<msg time="2024-09-30T02:29:33.098279" level="INFO">${order_name} = Sauce Labs Backpack</msg>
+<msg time="2024-09-30T17:47:32.655733" level="INFO">Element 'id=com.saucelabs.mydemoapp.android:id/titleTV' text is 'Sauce Labs Backpack' </msg>
+<msg time="2024-09-30T17:47:32.655733" level="INFO">criteria is com.saucelabs.mydemoapp.android:id/titleTV</msg>
+<msg time="2024-09-30T17:47:32.655733" level="INFO">${order_name} = Sauce Labs Backpack</msg>
 <var>${order_name}</var>
 <arg>${cart_details_locator.txt_order_name}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<status status="PASS" start="2024-09-30T02:29:33.057965" elapsed="0.040314"/>
+<status status="PASS" start="2024-09-30T17:47:32.615595" elapsed="0.040138"/>
 </kw>
 <kw name="Return From Keyword" owner="BuiltIn">
-<msg time="2024-09-30T02:29:33.099275" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2024-09-30T17:47:32.655733" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>${order_name}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.099275" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-30T17:47:32.655733" elapsed="0.000000"/>
 </kw>
-<msg time="2024-09-30T02:29:33.099275" level="INFO">${order_product_name} = Sauce Labs Backpack</msg>
+<msg time="2024-09-30T17:47:32.655733" level="INFO">${order_product_name} = Sauce Labs Backpack</msg>
 <var>${order_product_name}</var>
-<status status="PASS" start="2024-09-30T02:29:33.032056" elapsed="0.067219"/>
+<status status="PASS" start="2024-09-30T17:47:32.591138" elapsed="0.064595"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${order_product_name}</arg>
 <arg>${product_details.product_name}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.099275" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-30T17:47:32.655733" elapsed="0.001510"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${${order_amount}}</arg>
 <arg>${product_details.product_amount}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.100270" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-30T17:47:32.657243" elapsed="0.000843"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:32.204018" elapsed="0.896252"/>
+<status status="PASS" start="2024-09-30T17:47:32.526826" elapsed="0.131260"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:28.165038" elapsed="4.935232"/>
+<status status="PASS" start="2024-09-30T17:47:27.969833" elapsed="4.688253"/>
 </test>
 <kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-09-30T02:29:33.101264" elapsed="0.316597"/>
+<status status="PASS" start="2024-09-30T17:47:32.659083" elapsed="0.263711"/>
 </kw>
-<status status="PASS" start="2024-09-30T02:29:22.507474" elapsed="10.910387"/>
+<status status="PASS" start="2024-09-30T17:47:22.294818" elapsed="10.627976"/>
 </suite>
 <statistics>
 <total>
