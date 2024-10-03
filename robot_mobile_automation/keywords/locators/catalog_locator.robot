@@ -1,2 +1,0 @@
-*** Variables ***
-${catalog_locator.image_product}                    xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="{{product_name}}"]]

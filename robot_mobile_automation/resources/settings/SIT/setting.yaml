@@ -1,7 +1,0 @@
-remote_url:           http://127.0.0.1:4723 
-automation_name:      UIAutomator2
-device_name:          emulator-5554
-platform_version:     '15.0'
-platform_name:        Android
-app_package:          com.saucelabs.mydemoapp.android
-app_activity:         com.saucelabs.mydemoapp.android.view.activities.SplashActivity
