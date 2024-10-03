@@ -1,2 +1,0 @@
-*** Variables ***
-${cart_details_locator.txt_order_amount}            xpath=//XCUIElementTypeStaticText[@name='{{product_amount}}'][preceding-sibling::XCUIElementTypeStaticText[@name="{{product_name}}"]]
