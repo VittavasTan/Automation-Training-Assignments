@@ -1,0 +1,2 @@
+*** Variables ***
+${cart_details_locator.txt_order_amount}            xpath=//android.widget.TextView[@text='{{product_amount}}'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='{{product_name}}']]]]
