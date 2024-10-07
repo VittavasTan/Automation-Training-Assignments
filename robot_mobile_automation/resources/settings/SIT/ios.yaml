@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 remote_url:           http://127.0.0.1:4723
 automation_name:      XCUITest
 device_name:          iPhone 16 Pro Max
@@ -7,3 +8,6 @@ app_package:          null
 app_activity:         null
 app:                  com.saucelabs.mydemo.app.ios
 udid:                 82EEBBA9-0747-4197-A885-96714AAE0896
+=======
+
+>>>>>>> cb96b28 (fix mobile environment path)
