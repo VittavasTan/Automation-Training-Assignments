@@ -2,15 +2,15 @@
 Resource            import.robot
 
 *** Keywords ***
-Open Doppio Browser
-    SeleniumLibrary.Open Browser                                    ${url}        browser=gc
+Open Doppio browser
+    SeleniumLibrary.Open browser                                    ${url}        browser=gc
 
-Click User Icon
-    SeleniumLibrary.Wait Until Page Contains Element                ${common_locator.icon_user}
-    SeleniumLibrary.Click Element                                   ${common_locator.icon_user}
+Click user icon
+    SeleniumLibrary.Wait until page contains element                ${common_locator.icon_user}
+    SeleniumLibrary.Click element                                   ${common_locator.icon_user}
 
-Click OK Button
-    SeleniumLibrary.Wait Until Page Contains Element                ${common_locator.btn_ok}
-    SeleniumLibrary.Wait Until Element Is Visible                   ${login_locator.text_login_status}
-    SeleniumLibrary.Click Element                                   ${common_locator.btn_ok}
-    SeleniumLibrary.Wait Until Page Does Not Contain Element        ${common_locator.btn_ok}
+Click OK button
+    SeleniumLibrary.Wait until page contains element                ${common_locator.btn_ok}
+    SeleniumLibrary.Wait until element is visible                   ${login_locator.text_login_status}
+    SeleniumLibrary.Click element                                   ${common_locator.btn_ok}
+    SeleniumLibrary.Wait until page does not contain element        ${common_locator.btn_ok}

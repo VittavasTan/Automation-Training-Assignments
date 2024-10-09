@@ -1,21 +1,21 @@
 *** Settings ***
 Resource            ../keywords/import.robot
 
-Test Setup          common.Open Doppio Browser
-Test Teardown       SeleniumLibrary.Close Browser
+Test Setup          common.Open Doppio browser
+Test Teardown       SeleniumLibrary.Close browser
 
-Test Template       Test Login
+Test Template       Test login
 
 *** Keywords ***
-Test Login
+Test login
     [Arguments]        ${username}        ${password}        ${expected_message}
     
-    common.Click User Icon
+    common.Click user icon
     login_feature.Login    ${username}    ${password}
-    login_feature.Compare Login Status to Expected message    ${expected_message}
-    common.Click OK Button
+    login_feature.Compare login status to expected message    ${expected_message}
+    common.Click OK button
 
 
 *** Test Cases ***
-Test Login Using Data Driver
+Test login using data driver
     

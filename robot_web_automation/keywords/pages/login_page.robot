@@ -4,31 +4,31 @@ Library    SeleniumLibrary
 Resource    ../import.robot
 
 *** Keywords ***
-Click Sign Up Button At Login
-    SeleniumLibrary.Click Element          ${login_locator.btn_signup}
+Click sign up button at login
+    SeleniumLibrary.Click element          ${login_locator.btn_signup}
 
-Input Sign Up Username
+Input sign up username
     [Arguments]                            ${username}
-    SeleniumLibrary.Input Text             ${signup_locator.box_username}            ${username}
+    SeleniumLibrary.Input text             ${signup_locator.box_username}            ${username}
 
-Input Sign Up Password
+Input sign up password
     [Arguments]                            ${password}
-    SeleniumLibrary.Input Text             ${signup_locator.box_password}            ${password}
+    SeleniumLibrary.Input text             ${signup_locator.box_password}            ${password}
 
-Input Sign Up Confirm Password
+Input sign up confirm password
     [Arguments]                            ${confirm_password}
-    SeleniumLibrary.Input Text             ${signup_locator.box_confirm_password}    ${confirm_password}
+    SeleniumLibrary.Input text             ${signup_locator.box_confirm_password}    ${confirm_password}
 
-Click Sign Up Button
-    SeleniumLibrary.Click Element          ${signup_locator.btn_signup}
+Click sign up button
+    SeleniumLibrary.Click element          ${signup_locator.btn_signup}
 
-Input Login Username
+Input login username
     [Arguments]                            ${username}
-    SeleniumLibrary.Input Text             ${login_locator.box_username}            ${username}
+    SeleniumLibrary.Input text             ${login_locator.box_username}            ${username}
 
-Input Login Password
+Input login password
     [Arguments]                            ${password}
-    SeleniumLibrary.Input Text             ${login_locator.box_password}            ${password}
+    SeleniumLibrary.Input text             ${login_locator.box_password}            ${password}
 
-Click Login Button
-    SeleniumLibrary.Click Element          ${login_locator.btn_login}
+Click login button
+    SeleniumLibrary.Click element          ${login_locator.btn_login}

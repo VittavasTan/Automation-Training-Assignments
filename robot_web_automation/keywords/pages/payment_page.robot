@@ -4,28 +4,28 @@ Library    SeleniumLibrary
 Resource    ../import.robot
 
 *** Keywords ***
-Click Credit Card Method To Select
-    SeleniumLibrary.Click Element        ${payment_locator.btn_select_credit_card}
+Click credit card method to select
+    SeleniumLibrary.Click element        ${payment_locator.btn_select_credit_card}
 
-Click Next Button
-   SeleniumLibrary. Click Element        ${payment_locator.btn_next}
+Click next button
+   SeleniumLibrary. Click element        ${payment_locator.btn_next}
 
-Input Credit Card Number
+Input credit card number
     [Arguments]                          ${credit_card_number}
-    SeleniumLibrary.Input Text           ${payment_locator.box_card_number}        ${credit_card_number}
+    SeleniumLibrary.Input text           ${payment_locator.box_card_number}        ${credit_card_number}
 
-Input Credit Card EXP
+Input credit card exp
     [Arguments]                          ${exp}
-    SeleniumLibrary.Input Text           ${payment_locator.box_card_exp}           ${exp}
+    SeleniumLibrary.Input text           ${payment_locator.box_card_exp}           ${exp}
 
-Input Credit Card CVC
+Input credit card cvc
     [Arguments]                          ${cvc}
-    SeleniumLibrary.Input Text           ${payment_locator.box_card_cvc}           ${cvc}
+    SeleniumLibrary.Input text           ${payment_locator.box_card_cvc}           ${cvc}
 
-Input Credit Card Owner
+Input credit card owner
     [Arguments]                          ${owner}
-    SeleniumLibrary.Input Text           ${payment_locator.box_card_owner}         ${owner}
+    SeleniumLibrary.Input text           ${payment_locator.box_card_owner}         ${owner}
 
-Click Confirm Button
-    SeleniumLibrary.Wait Until Page Contains Element        ${payment_locator.btn_confirm}
-    SeleniumLibrary.Click Element                           ${payment_locator.btn_confirm}
+Click confirm button
+    SeleniumLibrary.Wait until page contains element        ${payment_locator.btn_confirm}
+    SeleniumLibrary.Click element                           ${payment_locator.btn_confirm}

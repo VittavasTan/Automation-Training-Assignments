@@ -2,8 +2,8 @@
 Resource                         ./import.robot
 
 *** Keywords ***
-Open Demo Application
-   AppiumLibrary.Open Application            remote_url=${remote_url}   
+Open demo application
+   AppiumLibrary.Open application            remote_url=${remote_url}   
     ...        automationName=${automation_name}
     ...        deviceName=${device_name}
     ...        platformVersion=${platform_version}
@@ -12,5 +12,5 @@ Open Demo Application
     ...        appActivity=${app_activity}
     ...        app=${app}
 
-Click Cart Icon
-    AppiumLibrary.Click Element               ${common_locator.icon_cart}
+Click cart icon
+    AppiumLibrary.Click element               ${common_locator.icon_cart}

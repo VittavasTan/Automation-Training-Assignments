@@ -4,13 +4,13 @@ Resource                ../import.robot
 *** Keywords ***
 Login
     [Arguments]                ${username}                   ${password}
-    SeleniumLibrary.Wait Until Page Contains Element         ${login_locator.btn_login}
-    login_page.Input Login Username                          ${username}
-    login_page.Input Login Password                          ${password}
-    login_page.Click Login Button
+    SeleniumLibrary.Wait until page contains element         ${login_locator.btn_login}
+    login_page.Input login username                          ${username}
+    login_page.Input login password                          ${password}
+    login_page.Click login button
 
-Compare Login Status to Expected message
+Compare login status to expected message
     [Arguments]                    ${expected_message}
-    SeleniumLibrary.Wait Until Page Contains Element        ${common_locator.btn_ok}
-    ${message}                                              login_page.Get Login Status
-    Should Be Equal                ${message}               ${expected_message}
+    SeleniumLibrary.Wait until page contains element        ${common_locator.btn_ok}
+    ${message}                                              login_page.Get login status
+    Should be equal                ${message}               ${expected_message}

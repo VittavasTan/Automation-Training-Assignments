@@ -2,7 +2,7 @@
 Resource            ../import.robot
 
 *** Keywords ***
-Compare Cart Details To Ordered Product Details
+Compare cart details to ordered product details
     [Arguments]                ${product_name}                                      ${product_amount}
-    ${order_amount}            cart_details_page.Get Order Amount Text              ${product_name}           ${product_amount}
-    Should Be Equal            ${${order_amount}}                                   ${${product_amount}}
+    ${order_amount}            cart_details_page.Get order amount text              ${product_name}           ${product_amount}
+    Should be equal            ${${order_amount}}                                   ${${product_amount}}

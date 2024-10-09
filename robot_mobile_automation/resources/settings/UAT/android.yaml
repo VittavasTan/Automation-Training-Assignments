@@ -4,10 +4,6 @@ device_name:          emulator-5554
 platform_version:     '15.0'
 platform_name:        Android
 app_package:          com.saucelabs.mydemoapp.android
-<<<<<<< HEAD
 app_activity:         com.saucelabs.mydemoapp.android.view.activities.SplashActivity
 app:                  null
 udid:                 null
-=======
-app_activity:         com.saucelabs.mydemoapp.android.view.activities.SplashActivity
->>>>>>> cb96b28 (fix mobile environment path)

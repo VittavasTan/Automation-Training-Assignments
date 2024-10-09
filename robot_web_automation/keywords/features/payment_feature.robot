@@ -4,10 +4,10 @@ Library    SeleniumLibrary
 Resource    ../import.robot
 
 *** Keywords ***
-Select Credit Card Method      
-    payment_page.Click Credit Card Method To Select
-    payment_page.Click Next Button
+Select credit card method      
+    payment_page.Click credit card method to select
+    payment_page.Click next button
 
-Confirm Payment
-    payment_page.Click Confirm Button
-    common.Click OK Button
+Confirm payment
+    payment_page.Click confirm button
+    common.Click OK button

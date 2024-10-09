@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on darwin)" generated="2024-10-07T17:55:58.243189" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/Users/vittavas.t/Desktop/Automation-Training-Assignments/robot_database_automation/test.robot">
+<test id="s1-t1" name="TC-001 Connect and disconnect from database" line="26">
+<kw name="Connect to database">
+<kw name="Connect To Database Using Custom Params" owner="DatabaseLibrary">
+<msg time="2024-10-07T17:55:58.257718" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2024-10-07T17:55:58.262937" level="INFO">Executing : Connect To Database Using Custom Params : psycopg2.connect(db_api_2.connect(database='training_platform_db', user='doppio-training-user', password=***, host='192.8.8.124', port='10004',))</msg>
+<arg>${db_type}</arg>
+<arg>${connection_string}</arg>
+<doc>*DEPRECATED* Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.257707" elapsed="0.035569"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Connect to database</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.293465" elapsed="0.000096"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.257579" elapsed="0.036016"/>
+</kw>
+<kw name="Disconnect from database">
+<kw name="Disconnect From Database" owner="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.293774" elapsed="0.000070"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Disconnect from database</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.293883" elapsed="0.000056"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.293674" elapsed="0.000289"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.257300" elapsed="0.036713"/>
+</test>
+<test id="s1-t2" name="TC-002 Check data in database" line="31">
+<kw name="Connect to database">
+<kw name="Connect To Database Using Custom Params" owner="DatabaseLibrary">
+<msg time="2024-10-07T17:55:58.294312" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2024-10-07T17:55:58.294420" level="INFO">Executing : Connect To Database Using Custom Params : psycopg2.connect(db_api_2.connect(database='training_platform_db', user='doppio-training-user', password=***, host='192.8.8.124', port='10004',))</msg>
+<arg>${db_type}</arg>
+<arg>${connection_string}</arg>
+<doc>*DEPRECATED* Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.294299" elapsed="0.023411"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Connect to database</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.317771" elapsed="0.000062"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.294198" elapsed="0.023665"/>
+</kw>
+<kw name="Check if exists in database">
+<kw name="Check If Exists In Database" owner="DatabaseLibrary">
+<msg time="2024-10-07T17:55:58.318041" level="WARN">Keyword 'DatabaseLibrary.Check If Exists In Database' is deprecated. Use new `Check Row Count` keyword with assertion engine instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2024-10-07T17:55:58.318128" level="INFO" html="true">Executing sql:&lt;br&gt;&lt;code style="font-weight: bold;"&gt;SELECT * FROM product WHERE name='Zoppee phone'&lt;/code&gt;</msg>
+<msg time="2024-10-07T17:55:58.326580" level="INFO" html="true">&lt;div style="max-width: 100%; overflow-x: auto;"&gt;&lt;table style="width: auto; border-collapse: collapse; border: 2px solid rgb(140 140 140)"&gt;&lt;caption style="text-align: left; font-weight: bold; padding: 5px;"&gt;Query returned 1 rows&lt;/caption&gt;&lt;tr&gt;&lt;th scope="col" style="background-color: #d6ecd4; border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;Row&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;id&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;name&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;description&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;qty&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;price&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;discount&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;image_url&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;product_category_id&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;rec_created_when&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;rec_modified_when&lt;/th&gt;&lt;th scope="col" style="background-color: #505050; color: #fff;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;rec_status&lt;/th&gt;&lt;/tr&gt;&lt;tr style="background-color: #eee;"&gt;&lt;th scope="row" style="background-color: #d6ecd4;border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;0&lt;/th&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;32&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;Zoppee phone&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;even gooderterestest&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;6&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;666.00&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;0&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;2024-09-05 09:55:47.488547+07:00&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;None&lt;/td&gt;&lt;td style="border: 1px solid rgb(160 160 160);padding: 8px 10px;text-align: center;"&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<arg>SELECT * FROM product WHERE name='Zoppee phone'</arg>
+<doc>*DEPRECATED* Use new `Check Row Count` keyword with assertion engine instead.
+The deprecated keyword will be removed in future versions.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.318031" elapsed="0.010740"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Data exists in database</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-10-07T17:55:58.328830" elapsed="0.000069"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.317940" elapsed="0.011023"/>
+</kw>
+<status status="PASS" start="2024-10-07T17:55:58.294082" elapsed="0.034931"/>
+</test>
+<status status="PASS" start="2024-10-07T17:55:58.243660" elapsed="0.085504"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-07T17:55:58.257718" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2024-10-07T17:55:58.294312" level="WARN">Keyword 'DatabaseLibrary.Connect To Database Using Custom Params' is deprecated. Use new `Connect To Database` keyword with custom parameters instead.
+The deprecated keyword will be removed in future versions.</msg>
+<msg time="2024-10-07T17:55:58.318041" level="WARN">Keyword 'DatabaseLibrary.Check If Exists In Database' is deprecated. Use new `Check Row Count` keyword with assertion engine instead.
+The deprecated keyword will be removed in future versions.</msg>
+</errors>
+</robot>

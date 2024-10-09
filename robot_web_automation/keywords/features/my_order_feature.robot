@@ -4,8 +4,8 @@ Library    SeleniumLibrary
 Resource    ../import.robot
 
 *** Keywords ***
-Verify If Order Is Already Preparing
-    common.Click User Icon
-    my_order_page.Click Preparing Tab
-    ${preparing_status}            my_order_page.Get Status Of Order If Preparing
-    Should Be Equal                ${preparing_status}                    ${True}
+Verify if order is already preparing
+    common.Click user icon
+    my_order_page.Click preparing tab
+    ${preparing_status}            my_order_page.Get status of order if preparing
+    Should be equal                ${preparing_status}                    ${True}

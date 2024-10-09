@@ -4,25 +4,25 @@ Library    SeleniumLibrary
 Resource    ../import.robot
 
 *** Keywords ***
-Input Delivery Name
+Input delivery name
     [Arguments]                                           ${name}
-    SeleniumLibrary.Wait Until Page Contains Element      ${delivery_locator.box_name}
-    SeleniumLibrary.Input Text                            ${delivery_locator.box_name}            ${name}
+    SeleniumLibrary.Wait until page contains element      ${delivery_locator.box_name}
+    SeleniumLibrary.Input text                            ${delivery_locator.box_name}            ${name}
 
-Input Delivery Surname
+Input delivery surname
     [Arguments]                                           ${surname}
-    SeleniumLibrary.Wait Until Page Contains Element      ${delivery_locator.box_surname}
-    SeleniumLibrary.Input Text                            ${delivery_locator.box_surname}         ${surname}
+    SeleniumLibrary.Wait until page contains element      ${delivery_locator.box_surname}
+    SeleniumLibrary.Input text                            ${delivery_locator.box_surname}         ${surname}
 
-Input Delivery Address
+Input delivery address
     [Arguments]                                           ${address}
-    SeleniumLibrary.Wait Until Page Contains Element      ${delivery_locator.box_address}
-    SeleniumLibrary.Input Text                            ${delivery_locator.box_address}         ${address}
+    SeleniumLibrary.Wait until page contains element      ${delivery_locator.box_address}
+    SeleniumLibrary.Input text                            ${delivery_locator.box_address}         ${address}
 
-Input Delivery Phone Number
+Input delivery phone number
     [Arguments]                                           ${phone}
-    SeleniumLibrary.Wait Until Page Contains Element      ${delivery_locator.box_phone}
-    SeleniumLibrary.Input Text                            ${delivery_locator.box_phone}           ${phone}
+    SeleniumLibrary.Wait until page contains element      ${delivery_locator.box_phone}
+    SeleniumLibrary.Input text                            ${delivery_locator.box_phone}           ${phone}
 
-Click Pay Button
-    SeleniumLibrary.Click Element                         ${delivery_locator.btn_pay}
+Click pay button
+    SeleniumLibrary.Click element                         ${delivery_locator.btn_pay}

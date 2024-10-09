@@ -2,17 +2,17 @@
 Resource            ../import.robot
 
 *** Keywords ***
-Input Login Username
+Input login username
     [Arguments]                            ${username}
-    SeleniumLibrary.Input Text             ${login_locator.box_username}            ${username}
+    SeleniumLibrary.Input text             ${login_locator.box_username}            ${username}
 
-Input Login Password
+Input login password
     [Arguments]                            ${password}
-    SeleniumLibrary.Input Text             ${login_locator.box_password}            ${password}
+    SeleniumLibrary.Input text             ${login_locator.box_password}            ${password}
 
-Click Login Button
-    SeleniumLibrary.Click Element          ${login_locator.btn_login}
+Click login button
+    SeleniumLibrary.Click element          ${login_locator.btn_login}
 
-Get Login Status
-    ${message}                             SeleniumLibrary.Get Text                 ${login_locator.text_login_status}
-    Return From Keyword                    ${message}
+Get login status
+    ${message}                             SeleniumLibrary.Get text                 ${login_locator.text_login_status}
+    Return from keyword                    ${message}

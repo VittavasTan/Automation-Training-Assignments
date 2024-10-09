@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.11.9 on darwin)" generated="2024-10-03T15:15:09.672053" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.11.9 on darwin)" generated="2024-10-09T10:48:53.709249" rpa="false" schemaversion="5">
 <suite id="s1" name="Appium Asgmt" source="/Users/vittavas.t/Desktop/Automation-Training-Assignments/robot_mobile_automation/testcases/appium_asgmt.robot">
-<kw name="Open Demo Application" owner="common" type="SETUP">
+<kw name="Open demo application" owner="common" type="SETUP">
 <kw name="Open Application" owner="AppiumLibrary">
 <arg>remote_url=${remote_url}</arg>
 <arg>automationName=${automation_name}</arg>
@@ -18,132 +18,131 @@ Please check https://appium.io/docs/en/2.1/cli/args/
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" start="2024-10-03T15:15:09.722606" elapsed="3.447957"/>
+<status status="PASS" start="2024-10-09T10:48:53.788343" elapsed="2.455561"/>
 </kw>
-<status status="PASS" start="2024-10-03T15:15:09.722424" elapsed="3.448332"/>
+<status status="PASS" start="2024-10-09T10:48:53.788167" elapsed="2.456038"/>
 </kw>
-<test id="s1-t1" name="TC001 Verify Cart Contain Correct Order Name And Amount" line="8">
-<kw name="Click Product Image" owner="catalog_page">
+<test id="s1-t1" name="TC001 Verify cart contain correct order name and amount" line="8">
+<kw name="Click product image" owner="catalog_page">
 <kw name="Replace String" owner="String">
-<msg time="2024-10-03T15:15:13.173180" level="INFO">${catalog_locator.image_product} = xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-10-09T10:48:56.246730" level="INFO">${catalog_locator.image_product} = xpath=//XCUIElementTypeImage[@name="Product Image"][following-sibling::XCUIElementTypeStaticText[@value="Sauce Labs Backpack"]]</msg>
 <var>${catalog_locator.image_product}</var>
 <arg>${catalog_locator.image_product}</arg>
 <arg>{{product_name}}</arg>
 <arg>${product_name}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2024-10-03T15:15:13.172243" elapsed="0.000974"/>
+<status status="PASS" start="2024-10-09T10:48:56.245995" elapsed="0.000770"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:14.810472" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-10-09T10:48:56.690188" level="INFO">xpath criteria: //XCUIElementTypeImage[@name="Product Image"][following-sibling::XCUIElementTypeStaticText[@value="Sauce Labs Backpack"]]</msg>
 <arg>${catalog_locator.image_product}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-10-03T15:15:13.173386" elapsed="1.637250"/>
+<status status="PASS" start="2024-10-09T10:48:56.246899" elapsed="0.443339"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:14.812966" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]'.</msg>
-<msg time="2024-10-03T15:15:14.929068" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Product Image"][following-sibling::android.widget.TextView[@text="Sauce Labs Backpack"]]</msg>
+<msg time="2024-10-09T10:48:56.690998" level="INFO">Clicking element 'xpath=//XCUIElementTypeImage[@name="Product Image"][following-sibling::XCUIElementTypeStaticText[@value="Sauce Labs Backpack"]]'.</msg>
+<msg time="2024-10-09T10:48:57.721890" level="INFO">xpath criteria: //XCUIElementTypeImage[@name="Product Image"][following-sibling::XCUIElementTypeStaticText[@value="Sauce Labs Backpack"]]</msg>
 <arg>${catalog_locator.image_product}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-03T15:15:14.811047" elapsed="0.118151"/>
+<status status="PASS" start="2024-10-09T10:48:56.690352" elapsed="1.031637"/>
 </kw>
 <arg>${product_details.product_name}</arg>
-<status status="PASS" start="2024-10-03T15:15:13.171486" elapsed="1.757857"/>
+<status status="PASS" start="2024-10-09T10:48:56.245129" elapsed="1.476957"/>
 </kw>
-<kw name="Click Add To Cart Button" owner="product_details_page">
+<kw name="Click add to cart button" owner="product_details_page">
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
 <arg>${product_details_locator.btn_add_cart}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-10-03T15:15:14.930340" elapsed="0.718941"/>
+<status status="PASS" start="2024-10-09T10:48:57.722788" elapsed="0.064552"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:15.651620" level="INFO">Clicking element 'accessibility_id=Tap to add product to cart'.</msg>
+<msg time="2024-10-09T10:48:57.789318" level="INFO">Clicking element 'accessibility_id=AddToCart'.</msg>
 <arg>${product_details_locator.btn_add_cart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-03T15:15:15.649525" elapsed="0.682261"/>
+<status status="PASS" start="2024-10-09T10:48:57.787599" elapsed="0.425936"/>
 </kw>
-<status status="PASS" start="2024-10-03T15:15:14.929905" elapsed="1.402207"/>
+<status status="PASS" start="2024-10-09T10:48:57.722406" elapsed="0.491442"/>
 </kw>
-<kw name="Click Cart Icon" owner="common">
+<kw name="Click cart icon" owner="common">
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:16.335044" level="INFO">Clicking element 'accessibility_id=Displays number of items in your cart'.</msg>
+<msg time="2024-10-09T10:48:58.216833" level="INFO">Clicking element 'accessibility_id=Cart-tab-item'.</msg>
 <arg>${common_locator.icon_cart}</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="PASS" start="2024-10-03T15:15:16.333295" elapsed="0.083113"/>
+<status status="PASS" start="2024-10-09T10:48:58.215008" elapsed="0.755817"/>
 </kw>
-<status status="PASS" start="2024-10-03T15:15:16.332753" elapsed="0.083798"/>
+<status status="PASS" start="2024-10-09T10:48:58.214452" elapsed="0.756511"/>
 </kw>
-<kw name="Compare Cart Details To Ordered Product Details" owner="cart_details_feature">
-<kw name="Get Order Amount Text" owner="cart_details_page">
+<kw name="Compare cart details to ordered product details" owner="cart_details_feature">
+<kw name="Get order amount text" owner="cart_details_page">
 <kw name="Replace String" owner="String">
-<msg time="2024-10-03T15:15:16.419557" level="INFO">${cart_details_locator.txt_order_amount} = xpath=//android.widget.TextView[@text='{{product_amount}}'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]</msg>
+<msg time="2024-10-09T10:48:58.974093" level="INFO">${cart_details_locator.txt_order_amount} = xpath=//XCUIElementTypeStaticText[@name='{{product_amount}}'][preceding-sibling::XCUIElementTypeStaticText[@name="Sauce Labs Backpack"]]</msg>
 <var>${cart_details_locator.txt_order_amount}</var>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <arg>{{product_name}}</arg>
 <arg>${product_name}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2024-10-03T15:15:16.418852" elapsed="0.000732"/>
+<status status="PASS" start="2024-10-09T10:48:58.973115" elapsed="0.001013"/>
 </kw>
 <kw name="Convert To String" owner="BuiltIn">
-<msg time="2024-10-03T15:15:16.420074" level="INFO">${str_product_amount} = 1</msg>
+<msg time="2024-10-09T10:48:58.974767" level="INFO">${str_product_amount} = 1</msg>
 <var>${str_product_amount}</var>
 <arg>${product_amount}</arg>
 <doc>Converts the given item to a Unicode string.</doc>
-<status status="PASS" start="2024-10-03T15:15:16.419889" elapsed="0.000213"/>
+<status status="PASS" start="2024-10-09T10:48:58.974555" elapsed="0.000240"/>
 </kw>
 <kw name="Replace String" owner="String">
-<msg time="2024-10-03T15:15:16.421167" level="INFO">${cart_details_locator.txt_order_amount} = xpath=//android.widget.TextView[@text='1'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]</msg>
+<msg time="2024-10-09T10:48:58.975877" level="INFO">${cart_details_locator.txt_order_amount} = xpath=//XCUIElementTypeStaticText[@name='1'][preceding-sibling::XCUIElementTypeStaticText[@name="Sauce Labs Backpack"]]</msg>
 <var>${cart_details_locator.txt_order_amount}</var>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <arg>{{product_amount}}</arg>
 <arg>${str_product_amount}</arg>
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
-<status status="PASS" start="2024-10-03T15:15:16.420235" elapsed="0.000999"/>
+<status status="PASS" start="2024-10-09T10:48:58.974937" elapsed="0.000968"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:17.170370" level="INFO">xpath criteria: //android.widget.TextView[@text='1'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]
-xpath criteria: //android.widget.TextView[@text='1'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]</msg>
+<msg time="2024-10-09T10:48:59.179210" level="INFO">xpath criteria: //XCUIElementTypeStaticText[@name='1'][preceding-sibling::XCUIElementTypeStaticText[@name="Sauce Labs Backpack"]]</msg>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" start="2024-10-03T15:15:16.421376" elapsed="0.749100"/>
+<status status="PASS" start="2024-10-09T10:48:58.976045" elapsed="0.203207"/>
 </kw>
 <kw name="Get Text" owner="AppiumLibrary">
-<msg time="2024-10-03T15:15:17.218983" level="INFO">Element 'xpath=//android.widget.TextView[@text='1'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]' text is '1' </msg>
-<msg time="2024-10-03T15:15:17.219083" level="INFO">xpath criteria: //android.widget.TextView[@text='1'][ancestor::android.widget.LinearLayout[preceding-sibling::android.view.ViewGroup[android.widget.TextView[@text='Sauce Labs Backpack']]]]</msg>
-<msg time="2024-10-03T15:15:17.219182" level="INFO">${order_amount} = 1</msg>
+<msg time="2024-10-09T10:48:59.505117" level="INFO">Element 'xpath=//XCUIElementTypeStaticText[@name='1'][preceding-sibling::XCUIElementTypeStaticText[@name="Sauce Labs Backpack"]]' text is '1' </msg>
+<msg time="2024-10-09T10:48:59.505159" level="INFO">xpath criteria: //XCUIElementTypeStaticText[@name='1'][preceding-sibling::XCUIElementTypeStaticText[@name="Sauce Labs Backpack"]]</msg>
+<msg time="2024-10-09T10:48:59.505194" level="INFO">${order_amount} = 1</msg>
 <var>${order_amount}</var>
 <arg>${cart_details_locator.txt_order_amount}</arg>
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
-<status status="PASS" start="2024-10-03T15:15:17.170707" elapsed="0.048499"/>
+<status status="PASS" start="2024-10-09T10:48:59.179343" elapsed="0.325860"/>
 </kw>
 <kw name="Return From Keyword" owner="BuiltIn">
-<msg time="2024-10-03T15:15:17.219563" level="INFO">Returning from the enclosing user keyword.</msg>
+<msg time="2024-10-09T10:48:59.505356" level="INFO">Returning from the enclosing user keyword.</msg>
 <arg>${order_amount}</arg>
 <doc>Returns from the enclosing user keyword.</doc>
-<status status="PASS" start="2024-10-03T15:15:17.219445" elapsed="0.000192"/>
+<status status="PASS" start="2024-10-09T10:48:59.505306" elapsed="0.000087"/>
 </kw>
-<msg time="2024-10-03T15:15:17.220631" level="INFO">${order_amount} = 1</msg>
+<msg time="2024-10-09T10:48:59.505448" level="INFO">${order_amount} = 1</msg>
 <var>${order_amount}</var>
 <arg>${product_name}</arg>
 <arg>${product_amount}</arg>
-<status status="PASS" start="2024-10-03T15:15:16.418569" elapsed="0.802089"/>
+<status status="PASS" start="2024-10-09T10:48:58.972738" elapsed="0.532718"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${${order_amount}}</arg>
 <arg>${${product_amount}}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-10-03T15:15:17.220804" elapsed="0.000817"/>
+<status status="PASS" start="2024-10-09T10:48:59.505508" elapsed="0.000305"/>
 </kw>
 <arg>${product_details.product_name}</arg>
 <arg>${product_details.product_amount}</arg>
-<status status="PASS" start="2024-10-03T15:15:16.417287" elapsed="0.804401"/>
+<status status="PASS" start="2024-10-09T10:48:58.971332" elapsed="0.534549"/>
 </kw>
-<status status="PASS" start="2024-10-03T15:15:13.170867" elapsed="4.050995"/>
+<status status="PASS" start="2024-10-09T10:48:56.244354" elapsed="3.261596"/>
 </test>
 <kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" start="2024-10-03T15:15:17.222390" elapsed="0.235374"/>
+<status status="PASS" start="2024-10-09T10:48:59.506184" elapsed="1.059237"/>
 </kw>
-<status status="PASS" start="2024-10-03T15:15:09.672561" elapsed="7.785292"/>
+<status status="PASS" start="2024-10-09T10:48:53.709734" elapsed="6.855847"/>
 </suite>
 <statistics>
 <total>
