@@ -1,2 +1,5 @@
 *.DS_Store
 .DS_Store
+
+robot_api_automation/
+robot_database_automation/
